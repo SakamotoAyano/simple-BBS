@@ -61,7 +61,7 @@
         </form>
 
 <!-- メッセージ -->  
-        <h3><?php if(isset($new_post_message)){foreach($new_post_message as $new_post_message){echo $new_post_message;}} ?></h3>
+        <b><?php if(isset($new_post_message)){foreach($new_post_message as $new_post_message){echo $new_post_message;}} ?></b>
 
         <h2>編集</h2>
         <form action="mission_5-1.php" method="POST">
@@ -70,6 +70,7 @@
             コメント <input type="text" name="edited_comment"><br>
             パスワード <input type="text" name="pass"><br>
             <input type="submit" name="edit_button" value="編集">
+        </form>
             
             <?php
                 if (isset($_POST["edit_button"])) {
@@ -115,9 +116,8 @@
                 ?>
 
 <!-- メッセージ -->  
-        <h3><?php if(isset($edit_message)){foreach($edit_message as $edit_message){echo $edit_message;}} ?></h3>
+        <b><?php if(isset($edit_message)){foreach($edit_message as $edit_message){echo $edit_message;}} ?></b>
 
-        </form>
         <h2>削除</h2>
         <form action="mission_5-1.php" method="POST">
             ID <input type="text" name="deleted_id"><br>
@@ -159,7 +159,7 @@
         ?>
 
 <!-- メッセージ -->  
-        <h3><?php if(isset($delete_message)){foreach($delete_message as $delete_message){echo $delete_message;}} ?></h3>
+        <b><?php if(isset($delete_message)){foreach($delete_message as $delete_message){echo $delete_message;}} ?></b>
 
         <hr>
         <h2>コメント一覧</h2>
